@@ -1,11 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Dialog, DialogHeader, DialogTitle, DialogTrigger, DialogContent } from '@/components/ui/dialog'
-import { ReloadIcon } from '@radix-ui/react-icons'
+import { ReloadIcon, UpdateIcon } from '@radix-ui/react-icons'
 import { CopyIcon, DollarSignIcon, DownloadIcon, ShuffleIcon, UploadIcon, WalletIcon } from 'lucide-react'
 import React from 'react'
 import TopupForm from './TopupForm'
 import WithdrawalForm from './WithdrawalForm'
 import TransferForm from './TransferForm'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 
 const Wallet = () => {
   return (
@@ -101,11 +102,39 @@ const Wallet = () => {
             </div>
           </CardContent>
         </Card>
-
       </div>
       
-    </div>
-  )
-}
+      <div className='py-5 pt-10 lg:w-[60%] flex flex-col gap-5'>
+          <div className='flex gap-2 items-center pb-5'>
+            <h1 className='text-2xl font-semibold'>History</h1>
+            <UpdateIcon className='h-7 w-7 p-0 cursor-pointer hover:text-gray-400'/>
+          </div>
+          <div className='space-y-5'>
 
-export default Wallet
+          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, i) => (
+            <div key={i}>
+              <Card className='lg:w-[90%] px-5 flex justify-between items-center'>
+                <div className='flex items-center gap-5'>
+                  <Avatar>
+                    <AvatarFallback>
+                      <ShuffleIcon />
+                    </AvatarFallback>
+                  </Avatar>
+                  <div className='space-y-1'>
+                    <p>Buy Asset</p>
+                    <p className='text-sm text-gray-500'>1/1/2025</p>
+                  </div>
+                </div>
+                <div>
+                  <p className='text-green-500'>+£250 GBP</p>
+                </div>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Wallet;

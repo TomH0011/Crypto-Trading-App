@@ -10,8 +10,6 @@ import {
 } from "@/components/ui/table";
 import { Avatar } from "@radix-ui/react-avatar";
 import { AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { BookmarkFilledIcon } from "@radix-ui/react-icons";
 
 const Activity = () => {
   return (
