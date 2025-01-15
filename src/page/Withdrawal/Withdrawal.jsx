@@ -32,8 +32,8 @@ const Withdrawal = () => {
             <TableCell className="flex items-center gap-2">
               <span>Bank Account</span>
             </TableCell>
-            <TableCell className="text-right">$69,249</TableCell>
-            <TableCell className="text-right">$99,304</TableCell>
+            <TableCell className="text-right">£69,249</TableCell>
+            <TableCell className="text-right text-green-600">Success</TableCell>
           </TableRow>
         ))}
       </TableBody>
