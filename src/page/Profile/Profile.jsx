@@ -3,8 +3,12 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { VerifiedIcon } from 'lucide-react';
 import React from 'react';
+import { Dialog, DialogTrigger, DialogHeader, DialogContent, DialogTitle } from '@/components/ui/dialog';
 
 const Profile = () => {
+  const handleEnableTwoStepVerification=()=>{
+    console.log("two-step verification handled")
+  }
   return (
     <div className="flex flex-col items-center mb-5">
       <div className="pt-10 w-full lg:w-[60%]">
@@ -80,17 +84,14 @@ const Profile = () => {
             <Dialog>
               <DialogTrigger>
                 <Button>
-                  Enabled Two Step Verification
+                  Enable Two Step Verification
                 </Button>
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
                   <DialogTitle>Verify Your Account</DialogTitle>
-                  <DialogDescription>
-                    This action cannot be undone. This will permanently delete your account
-                    and remove your data from our servers.
-                  </DialogDescription>
                 </DialogHeader>
+                {/* <AccountVerificationForm handleSubmit={handleEnableTwoStepVerification}/> */}
               </DialogContent>
             </Dialog>
             </div>
