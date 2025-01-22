@@ -11,3 +11,7 @@
   right: 0; /* Aligns the container to the right */
   bottom: 0; /* Aligns the container to the bottom */
 }
+
+.bgBlur {
+  backdrop-filter: blur(10px)
+}

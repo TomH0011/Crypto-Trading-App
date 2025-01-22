@@ -44,7 +44,7 @@ const Wallet = () => {
             <div className='flex gap-7 mt-5'>
               <Dialog>
                 <DialogTrigger>
-                  <div className='h-24 w-24 hover:text-gray-400 cursor-pointer flex flex-col items-center justify-center rounded-md shadow-slate-800 shadow-md'>
+                  <div className='h-24 w-24 hover:text-gray-400 cursor-pointer flex flex-col items-center justify-center rounded-md'>
                     <UploadIcon/>
                     <span className='text-sm mt-2'>
                       Add Money
@@ -64,7 +64,7 @@ const Wallet = () => {
 
               <Dialog>
                 <DialogTrigger>
-                  <div className='h-24 w-24 hover:text-gray-400 cursor-pointer flex flex-col items-center justify-center rounded-md shadow-slate-800 shadow-md'>
+                  <div className='h-24 w-24 hover:text-gray-400 cursor-pointer flex flex-col items-center justify-center rounded-md'>
                     <DownloadIcon/>
                     <span className='text-sm mt-2'>
                       Withdraw Money
@@ -83,7 +83,7 @@ const Wallet = () => {
 
               <Dialog>
                 <DialogTrigger>
-                  <div className='h-24 w-24 hover:text-gray-400 cursor-pointer flex flex-col items-center justify-center rounded-md shadow-slate-800 shadow-md'>
+                  <div className='h-24 w-24 hover:text-gray-400 cursor-pointer flex flex-col items-center justify-center rounded-md'>
                     <ShuffleIcon/>
                     <span className='text-sm mt-2'>
                       Transer Funds
