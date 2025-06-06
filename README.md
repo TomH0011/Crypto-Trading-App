@@ -28,11 +28,11 @@ A full-stack cryptocurrency trading dashboard that lets users register/login, vi
       
       price.api.key=YOUR_PRICE_API_KEY_HERE
       
-   # (Optional) For MySQL/PostgreSQL:
-   # spring.datasource.url=jdbc:mysql://localhost:3306/crypto_db
-   # spring.datasource.username=root
-   # spring.datasource.password=YourDBPassword
-   # spring.jpa.hibernate.ddl-auto=update
+    (Optional) For MySQL/PostgreSQL:
+    spring.datasource.url=jdbc:mysql://localhost:3306/crypto_db
+    spring.datasource.username=root
+    spring.datasource.password=YourDBPassword
+    spring.jpa.hibernate.ddl-auto=update
 
      Run the backend server:
        mvn spring-boot:run
