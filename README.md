@@ -8,7 +8,7 @@ A modern, full-stack cryptocurrency trading dashboard that provides real-time ma
 - **User Authentication**: Secure login and registration system with JWT
 - **Portfolio Management**: Track your cryptocurrency holdings and performance
 - **Mock Trading**: Practice trading with virtual currency
-- **Responsive Design**: Optimized for both desktop and mobile devices
+- **Responsive Design**: Optimised for both desktop and mobile devices
 - **Interactive Charts**: Visual representation of market data using ApexCharts
 - **Secure API**: Protected endpoints with JWT authentication
 
@@ -20,7 +20,6 @@ A modern, full-stack cryptocurrency trading dashboard that provides real-time ma
 - **TailwindCSS**: Utility-first CSS framework
 - **ApexCharts**: Interactive charting library
 - **React Hook Form**: Efficient form handling
-- **Zod**: Type-safe schema validation
 - **Radix UI**: Accessible UI components
 
 ### Backend
@@ -28,23 +27,6 @@ A modern, full-stack cryptocurrency trading dashboard that provides real-time ma
 - **H2 Database**: In-memory database (configurable for MySQL/PostgreSQL)
 - **JWT**: Secure authentication
 - **Maven**: Dependency management
-
-## Performance Optimisations
-
-### Frontend
-- Code splitting and lazy loading
-- Optimised bundle size with Vite
-- Memoized components for better rendering performance
-- Efficient state management with React Context
-- Responsive images and assets
-- Caching strategies for API calls
-
-### Backend
-- Connection pooling
-- Caching layer for frequently accessed data
-- Optimized database queries
-- Rate limiting for API endpoints
-- Efficient error handling
 
 ## Installation
 
@@ -130,16 +112,6 @@ A modern, full-stack cryptocurrency trading dashboard that provides real-time ma
    ```
    Deploy the contents of the `dist` directory to your hosting service.
 
-## Security Considerations
-
-- Use environment variables for sensitive data
-- Implement rate limiting
-- Enable CORS properly
-- Use HTTPS in production
-- Regular security updates
-- Input validation
-- XSS protection
-
 ## Contributing
 
 1. Fork the repository
@@ -148,15 +120,6 @@ A modern, full-stack cryptocurrency trading dashboard that provides real-time ma
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Cryptocurrency price data providers
-- Open source community
-- Contributors and maintainers
 
 
 
